@@ -1,5 +1,5 @@
 let express=require('express');
-let stripe=require('stripe')('sk_test_kR4BF5lebtJxh7mzwDEtxYf0');
+let stripe=require('stripe')('stripe_api_key');
 let hbs= require('hbs');
 let bodyParser= require('body-parser');
 
