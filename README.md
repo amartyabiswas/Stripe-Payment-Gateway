@@ -5,4 +5,4 @@
 
 #### Pay using Card option deducts the amount, and transfers to the bank account associated with Stripe.
 
-# All rights reserved @ Amartya.
+### All rights reserved @ Amartya.
