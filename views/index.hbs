@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Store</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        .heading{
+            background-color: #eb3b5a;
+            box-shadow: 0px 0px 20px black;
+        }
+    </style>
+</head>
+<body style="background-color: #0fb9b1">
+
+<div class="heading" align="center">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header" style="font-family: 'Baskerville Old Face'">Buy Reebok Zig Pulse II</h1>
+        </div>
+    </div>
+</div>
+<br><br>
+<div class="row">
+    <div class="col-md-6">
+        <img class="img-responsive" src="https://onestepfurther3.files.wordpress.com/2011/04/zigpulse.png">
+        <h3 align="center" style="margin-top: 50px">Rs. 2999</h3>
+    </div>
+    <div class="col-md-5">
+        <img class="img-responsive" style="margin-left: -7px" width="155" height="50" src="https://s3.amazonaws.com/freebiesupply/large/2x/reebok-logo-png-transparent.png">
+        <h3>Reebok Men's Zigpulse Track Shoe</h3>
+        <h3>Highlights</h3>
+        <ul>
+            <li>Breathable, mesh upper</li>
+            <li>Low-cut design</li>
+            <li>Full-foot ZigTech midsole</li>
+            <li>TPU heel plate</li>
+            <li>Carbon-rubber outsole details</li>
+        </ul>
+        <h3>Product description</h3>
+        <p>
+            Reebok unique zig outsole design gets a modern update in this Reebok zig pulse. The light and breathable mesh upper is cool and comfortable. Contemporary colors add fashion appeal. The full-foot zigtech midsole adds lasting cushion and response. Reebok was founded for one of the best reasons possible: athletes wanted to run faster. So in the 1890s, Joseph William Foster made some of the first known running shoes with spikes in them. By 1895, he was in business making shoes by hand for top runners; and before long his fledgling company, J.W. Foster and Sons, developed an international clientele of distinguished athletes.
+        </p>
+
+        <form action="/charge" method="post">
+            <form action="your-server-side-code" method="POST">
+                <script
+                        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                        data-key="pk_test_QTHdiQ8aApMEgoXfdurVgeoC"
+                        data-amount="2999"
+                        data-name="Demo Site"
+                        data-description="Example charge"
+                        data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                        data-locale="auto">
+                </script>
+            </form>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
